@@ -1,0 +1,32 @@
+{
+  "name": "@seanmcp/scripts",
+  "version": "0.0.1",
+  "description": "Scripts for JavaScript development",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "@seanmcp/scripts": "bin/mcp-scripts",
+    "mcp-scripts": "bin/mcp-scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanmcp/scripts.git"
+  },
+  "keywords": [
+    "scripts"
+  ],
+  "author": "Sean McPherson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanmcp/scripts/issues"
+  },
+  "homepage": "https://github.com/seanmcp/scripts#readme",
+  "dependencies": {
+    "prettier": "^1.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}

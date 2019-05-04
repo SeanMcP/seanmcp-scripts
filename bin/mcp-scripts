@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+PACKAGE_NAME="@seanmcp/scripts"
+PACKAGE_DIR="node_modules/$PACKAGE_NAME"
+PRETTIER="$PACKAGE_DIR/node_modules/prettier/bin-prettier.js"
+ESLINT="$PACKAGE_DIR/node_modules/eslint/bin/eslint.js"
+GLOB="src/**/*.{js,jsx,json}"
+
+if [ -z "$1" ]
+  then
+    echo "No argument supplied"
+elif [ "$1" == "prettier" ]
+    then
+        $PRETTIER --write $GLOB
+elif [ "$1" == "eslint" ]
+    then
+        $ESLINT -c $PACKAGE_DIR/.eslintrc.node.js --fix $GLOB
+fi
