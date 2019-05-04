@@ -14,5 +14,5 @@ elif [ "$1" == "prettier" ]
         $PRETTIER --write $GLOB
 elif [ "$1" == "eslint" ]
     then
-        $ESLINT -c $PACKAGE_DIR/.eslintrc.node.js --fix $GLOB
+        $ESLINT -c $PACKAGE_DIR/.eslintrc.node.json --fix $GLOB
 fi
